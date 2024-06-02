@@ -1,7 +1,7 @@
 const axios = require("axios");
 const API = global.config.ApiUrl;
 module.exports.config = {
-    name: "meta",
+    name: "tonu",
     version: "1",
     hasPermission: 0,
     credits: "SAMI",
