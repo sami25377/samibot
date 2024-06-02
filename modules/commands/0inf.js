@@ -35,6 +35,6 @@ api.sendMessage({body:`🖥️𝗕𝗢𝗧 𝗗𝗘𝗩𝗘𝗟𝗢𝗣𝗘𝗥 
 
 ❯❯❯❯❯❯ 𝗦𝗘𝗧𝗨𝗣❗
 ✬𝗧𝗶𝗺𝗲: ${juswa} 
-✬𝗕𝗼𝘁 𝘀𝘁𝗮𝗿𝘁𝗲𝗱: ${hours}:${minutes}:${seconds}.\n\n✬𝗡𝗼𝘁𝗲: ${global.config.BOTNAME} 𝗶𝘀 𝗻𝗼𝘁 𝗮 𝘀𝗶𝗺𝗽𝗹𝗲 𝗯𝗼𝘁, 𝗧𝗵𝗶𝘀 𝗮𝗻 𝗔.𝗶(𝗮𝗿𝘁𝗶𝗳𝗶𝗰𝗶𝗮𝗹 𝗶𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝗰𝗲) 𝗕𝗼𝘁 𝗺𝗮𝗱𝗲 𝗳𝗼𝗿 𝗮𝗹𝗽𝗵𝗮 𝘁𝗲𝘀𝘁..⚡`,attachment: fs.createReadStream(__dirname + "/noprefix/xakibin.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/noprefix/c.jpg")); 
+✬𝗕𝗼𝘁 𝘀𝘁𝗮𝗿𝘁𝗲𝗱: ${hours}:${minutes}:${seconds}.\n\n✬𝗡𝗼𝘁𝗲: ${global.config.BOTNAME} 𝗶𝘀 𝗻𝗼𝘁 𝗮 𝘀𝗶𝗺𝗽𝗹𝗲 𝗯𝗼𝘁, 𝗧𝗵𝗶𝘀 𝗮𝗻 𝗔.𝗶(𝗮𝗿𝘁𝗶𝗳𝗶𝗰𝗶𝗮𝗹 𝗶𝗻𝘁𝗲𝗹𝗹𝗶𝗴𝗲𝗻𝗰𝗲) 𝗕𝗼𝘁 𝗺𝗮𝗱𝗲 𝗳𝗼𝗿 𝗮𝗹𝗽𝗵𝗮 𝘁𝗲𝘀𝘁..⚡`,attachment: fs.createReadStream(__dirname + "/noprefix/info.png")}, event.threadID, () => fs.unlinkSync(__dirname + "/noprefix/c.jpg")); 
       return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/juswa.jpg")).on("close",() => callback());
    };;
